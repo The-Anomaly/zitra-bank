@@ -1,13 +1,99 @@
+@import url(../src/assets/fonts/styles.css);
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --gradient-green: linear-gradient(
+    99.84deg,
+    #013f00 -25.41%,
+    #48d911 64.26%,
+    #5aff15 150.58%
+  );
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Euclid";
+  font-weight: 400;
+  font-size: 14px;
+  color: #96999F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Scrollbar */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #03a300;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #03a300;
+}
+
+/* Page */
+.container {
+  margin: auto;
+  margin: auto;
+  max-width: 1200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+img,
+svg {
+  width: auto;
+  height: auto;
+}
+
+button,
+input,
+textarea {
+  font-family: "Euclid";
+  font-weight: 400;
+  outline: none !important;
+}
+
+[role="button"],
+button {
+  cursor: pointer;
 }

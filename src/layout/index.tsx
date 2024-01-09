@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Footer } from "./footer";
 import { Navbar, NavbarProps } from "./navbar";
 
@@ -7,11 +7,16 @@ export interface LayoutProps extends NavbarProps {
 }
 
 const Layout = ({ children, active }) => {
+  const [clear, setClear] = useState(false);
+
+  const newsletter = async (email) => {
+    console.log(email);
+  };
   return (
     <>
       <Navbar active={active} />
       {children}
-      <Footer />
+      <Footer clear={clear} submit={newsletter} />
     </>
   );
 };

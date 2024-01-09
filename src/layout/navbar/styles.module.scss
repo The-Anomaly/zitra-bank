@@ -1,0 +1,170 @@
+.navBg * {
+  transition: 0.3s;
+  opacity: 0.5;
+  animation: fadeIn 1s ease-in 1 forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navBg {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  transition: 0.3s;
+
+  &.light {
+    background: #fff;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.scrollNav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo {
+  width: 100px;
+}
+
+.nav {
+  margin-left: auto;
+  font-weight: 300;
+  font-size: 15px;
+  color: #364052;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2rem;
+
+    &:hover {
+      color: #27ad08;
+    }
+  }
+}
+
+.light {
+  .nav {
+    color: #8a94a6;
+  }
+}
+.dark {
+  .nav {
+    color: #fff;
+  }
+}
+
+a.activeItem {
+  color: #27ad08;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .nav {
+    margin-left: 0;
+  }
+  .logo {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hamburger * {
+    transition: 0.3s;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    right: 1rem;
+  }
+  .hamburger div {
+    background: #fff;
+    height: 2px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .dark {
+    .hamburger div {
+      background: #fff;
+    }
+  }
+  .light {
+    .hamburger div {
+      background: #1b1f27;
+    }
+  }
+  .hamburger div:last-of-type {
+    width: 50%;
+    margin-left: auto;
+  }
+  .closeMenuBtn div:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .closeMenuBtn div:nth-of-type(2) {
+    transform: rotate(-45deg) translate(6px, -5px);
+  }
+  .closeMenuBtn div:last-of-type {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .nav {
+    color: #1b1f27 !important;
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    font-weight: 500;
+
+    a {
+      margin-left: 0;
+    }
+  }
+  .openMenu {
+    height: 100vh;
+    width: 90%;
+    right: 0;
+    max-width: 500px;
+    background: #fff;
+
+    .hamburger {
+      div {
+        background: #1b1f27;
+      }
+    }
+
+    .header {
+      padding: 1.5rem;
+    }
+  }
+}

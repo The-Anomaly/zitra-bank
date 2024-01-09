@@ -68,7 +68,11 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
             : styles.light
         } ${showNav ? styles.openMenu : ""}`}
       >
-        <section>
+        <section
+          className={`container ${styles.header}  ${
+            scrollNav ? styles.scrollNav : ""
+          }`}
+        >
           <Link to={Routes.home}>
             <LogoWithText />
           </Link>
@@ -88,6 +92,16 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
           ) : (
             ""
           )}
+          <button
+            onClick={() => setShowNav(!showNav)}
+            className={`${styles.hamburger} ${
+              showNav ? styles.closeMenuBtn : ""
+            }`}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
         </section>
       </header>
     </>
