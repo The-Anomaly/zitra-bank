@@ -14,8 +14,16 @@ import { ReactComponent as ArrowCircleDown } from "./arrowCircleDown.svg";
 import { ReactComponent as CloseCircle } from "./closeCircle.svg";
 import { ReactComponent as LinkedinIcon2 } from "./linkedinIcon2.svg";
 import { ReactComponent as WhatsappIcon } from "./whatsappIcon.svg";
+import { ReactComponent as VaultIcon } from "./vaultIcon.svg";
+import { ReactComponent as FlexIcon } from "./flexIcon.svg";
+import { ReactComponent as SaveIcon } from "./saveIcon.svg";
+import { ReactComponent as LoanIcon } from "./loanIcon.svg";
 
 export {
+  VaultIcon,
+  FlexIcon,
+  SaveIcon,
+  LoanIcon,
   WhatsappIcon,
   LinkedinIcon2,
   ArrowCircleDown,

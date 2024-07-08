@@ -73,12 +73,7 @@
       border-radius: 6.59px;
       border: 0.824px solid rgba(38, 120, 242, 0.04);
       opacity: 0.75;
-      background: linear-gradient(
-          0deg,
-          rgba(38, 120, 242, 0.12) 0%,
-          rgba(38, 120, 242, 0.12) 100%
-        ),
-        #fff;
+      background: inherit;
       box-shadow: 0px 3.295px 3.295px 1.648px rgba(221, 205, 203, 0.16);
       width: 94%;
       position: absolute;
@@ -94,12 +89,7 @@
       border-radius: 6.218px;
       border: 0.777px solid rgba(38, 120, 242, 0.04);
       opacity: 0.5;
-      background: linear-gradient(
-          0deg,
-          rgba(38, 120, 242, 0.12) 0%,
-          rgba(38, 120, 242, 0.12) 100%
-        ),
-        #fff;
+      background: inherit;
       box-shadow: 0px 3.109px 3.109px 1.555px rgba(221, 205, 203, 0.16);
       width: 88%;
       position: absolute;
@@ -107,6 +97,22 @@
       z-index: -2;
       top: 20px;
       left: 6%;
+    }
+
+    > svg {
+      min-width: 40px;
+    }
+
+    div {
+      p:first-of-type {
+        color: #01061c;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      p:nth-of-type(2) {
+        color: #4e4e4e;
+        line-height: 1.4;
+      }
     }
   }
 

@@ -1,11 +1,18 @@
-import { LeftArrowCircle, WalletIcon } from "assets";
+import {
+  LeftArrowCircle,
+  WalletIcon,
+  VaultIcon,
+  FlexIcon,
+  SaveIcon,
+  LoanIcon,
+} from "assets";
 import styles from "./styles.module.scss";
 import { ReactNode } from "react";
 
 const Products = () => {
   const products: ProductType[] = [
     {
-      icon: <WalletIcon />,
+      icon: <FlexIcon />,
       title: "Z - Flex",
       shortText: "Open a Zitra savings account with a minimum of ₦1K.",
       longText: (
@@ -19,9 +26,15 @@ const Products = () => {
       ),
       backgroundColor: "#d1e2fa",
       stackBackgroundColor: "#89ade1",
+      stackCardBackground: `linear-gradient(
+        0deg,
+        rgba(38, 120, 242, 0.12) 0%,
+        rgba(38, 120, 242, 0.12) 100%
+      ),
+      #fff`,
     },
     {
-      icon: <WalletIcon />,
+      icon: <VaultIcon />,
       title: "Z - Vault",
       shortText: "You can open a Z-Vault account with a minimum of ₦50K.",
       longText: (
@@ -34,9 +47,15 @@ const Products = () => {
       ),
       backgroundColor: "#E9CCFF",
       stackBackgroundColor: "#A683C1",
+      stackCardBackground: `linear-gradient(
+        0deg,
+        rgba(152, 38, 242, 0.12) 0%,
+        rgba(152, 38, 242, 0.12) 100%
+      ),
+      #fff`,
     },
     {
-      icon: <WalletIcon />,
+      icon: <SaveIcon />,
       title: "Z - Save",
       shortText:
         "Automatic payments, makes it easy to save more and track your spending.",
@@ -50,9 +69,15 @@ const Products = () => {
       ),
       backgroundColor: "#FFD6E7",
       stackBackgroundColor: "#C0819D",
+      stackCardBackground: `linear-gradient(
+        0deg,
+        rgba(222, 32, 112, 0.12) 0%,
+        rgba(222, 32, 112, 0.12) 100%
+      ),
+      #fff`,
     },
     {
-      icon: <WalletIcon />,
+      icon: <LoanIcon />,
       title: "Get access to loans of up to ₦5 million",
       shortText: "You can open a Z-Vault account with a minimum of ₦50K.",
       longText: (
@@ -64,10 +89,16 @@ const Products = () => {
       ),
       backgroundColor: "#D6FFCC",
       stackBackgroundColor: "#94DA84",
-      textColor: "#060616"
+      textColor: "#060616",
+      stackCardBackground: `linear-gradient(
+        0deg,
+        rgba(41, 148, 17, 0.12) 0%,
+        rgba(41, 148, 17, 0.12) 100%
+      ),
+      #fff`,
     },
     {
-      icon: <WalletIcon />,
+      icon: <LoanIcon />,
       title: "Business Loan",
       shortText: "Get access to loans upwards of ₦5 million",
       longText: (
@@ -80,6 +111,12 @@ const Products = () => {
       stackBackgroundColor: "#0D2707",
       titleColor: "#ffffff",
       textColor: "#ffffff",
+      stackCardBackground: `linear-gradient(
+        0deg,
+        rgba(41, 148, 17, 0.12) 0%,
+        rgba(41, 148, 17, 0.12) 100%
+      ),
+      #fff`,
     },
   ];
   return (
@@ -111,8 +148,9 @@ interface ProductType {
   longText: string | ReactNode;
   backgroundColor: string;
   stackBackgroundColor: string;
-  textColor?: string
-  titleColor?: string
+  textColor?: string;
+  titleColor?: string;
+  stackCardBackground?: string;
 }
 const Product = ({
   icon,
@@ -120,7 +158,10 @@ const Product = ({
   stackBackgroundColor,
   title,
   shortText,
-  longText,textColor,titleColor
+  longText,
+  textColor,
+  titleColor,
+  stackCardBackground,
 }: ProductType) => {
   return (
     <>
@@ -132,7 +173,10 @@ const Product = ({
           style={{ backgroundColor: stackBackgroundColor }}
           className={styles.product__stackWrap}
         >
-          <div className={styles.product__stack}>
+          <div
+            style={{ background: stackCardBackground }}
+            className={styles.product__stack}
+          >
             {icon}
             <div>
               <p>{title}</p>
@@ -141,8 +185,8 @@ const Product = ({
           </div>
         </div>
         <div className={styles.product__content}>
-          <p style={{color:titleColor}} >{title}</p>
-          <p  style={{color: textColor}} >{longText}</p>
+          <p style={{ color: titleColor }}>{title}</p>
+          <p style={{ color: textColor }}>{longText}</p>
           <button>Learn More</button>
         </div>
       </div>
