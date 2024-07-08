@@ -1,0 +1,118 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img {
+  width: 100%;
+  max-width: 500px;
+}
+.ttl {
+  color: #364052;
+  font-size: 36px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+.steps {
+}
+.step {
+  display: flex;
+  gap: 10%;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &__ttl {
+    color: #364052;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  &__txt {
+    font-size: 16px;
+    max-width: 360px;
+    line-height: 1.4;
+  }
+
+  &__count {
+    content: "01";
+    color: #0dad08;
+    font-family: "Euclid";
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  &::before {
+    content: url(../../../assets/vectors/dashedLine.svg);
+    width: 1px;
+    height: 60px;
+    // border: 0.5px dashed #0dad08;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    // overflow: hidden;
+  }
+
+  &:last-of-type::before {
+    display: none;
+  }
+}
+.btns {
+  gap: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+
+  svg {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ttl {
+    font-size: 24px;
+  }
+  .step {
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    &__count {
+      font-size: 30px;
+    }
+    &__ttl {
+      font-size: 18px;
+    }
+    &__txt {
+      font-size: 14px;
+    }
+
+    &::before {
+      //   height: 40px;
+      left: 16px;
+      top: 50px;
+      overflow: hidden;
+    }
+  }
+  .btns {
+    svg {
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+}

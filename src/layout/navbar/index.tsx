@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
     <>
       <header
         className={`${styles.navBg} ${
-          scrollNav
+          scrollNav || mobile
             ? styles.light
             : active === "home"
             ? styles.colored

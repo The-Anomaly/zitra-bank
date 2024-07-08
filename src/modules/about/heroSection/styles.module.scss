@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  margin-left: calc(((100vw - 1200px) + 1rem) / 2);
+  padding: 9rem 0 6rem 1rem;
+  align-items: center;
+}
+.txtSec {
+  color: #101319;
+}
+.ttl {
+  font-size: 50px;
+  margin-bottom: 1.5rem;
+}
+.txt {
+  color: #96999f;
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 480px;
+}
+.img {
+  width: 50%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    padding: 7rem 1rem 3rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0;
+  }
+  .ttl {
+    font-size: 30px;
+  }
+  .txt {
+    font-size: 14px;
+  }
+  .img {
+    width: calc(100% + 1rem);
+    margin-right: -1rem;
+  }
+}

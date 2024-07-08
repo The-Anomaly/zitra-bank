@@ -1,0 +1,32 @@
+.bg {
+  background: #fdfdfd;
+}
+.introSec {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+.ttl1 {
+  margin-bottom: 1rem;
+  color: #101319;
+  font-size: 50px;
+}
+.txt1 {
+  line-height: 2;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .introSec {
+    padding-top: 7rem;
+    text-align: left;
+  }
+  .ttl1 {
+    font-size: 30px;
+  }
+  .txt1 {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}

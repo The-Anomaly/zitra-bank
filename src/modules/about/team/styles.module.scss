@@ -1,0 +1,72 @@
+.bg {
+  background: #fdfdfd;
+}
+.teamSec {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.ttl {
+  color: #101319;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.txt {
+  color: #96999f;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3rem 8px;
+}
+.member {
+  &__img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  &__name {
+    color: #101319;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  &__role {
+    color: #03a300;
+    // font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  &__link {
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .teamSec {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .ttl {
+    font-size: 24px;
+  }
+  .txt {
+    font-size: 14px;
+  }
+  .members {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem 8px;
+  }
+  .member {
+    &__name {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    &__role {
+      font-size: 12px;
+    }
+  }
+}

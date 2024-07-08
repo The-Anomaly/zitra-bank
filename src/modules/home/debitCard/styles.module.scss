@@ -1,0 +1,52 @@
+.bg {
+  background: #c3ffb5;
+}
+.section {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.ttl {
+  color: #060616;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.txt {
+  color: #364052;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+.cardSec {
+  background: #ffffff4d;
+  padding: 3rem;
+  border: 8px solid #ffffff4d;
+  border-radius: 16px;
+  background: #f9fbfc;
+
+  img {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .ttl {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .txt {
+    font-size: 14px;
+  }
+  .cardSec {
+    padding: 1.5rem;
+  }
+}

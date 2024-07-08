@@ -1,0 +1,123 @@
+.proofContainer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.ttl {
+  color: #060616;
+  font-weight: 800;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.logoWrap {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.logoWrap img,
+.logoWrap svg {
+  margin-right: 2rem;
+}
+.logo1 {
+  width: 94px;
+  min-width: 94px;
+}
+.logo2 {
+  width: 78px;
+  min-width: 78px;
+}
+.logo3 {
+  width: 58px;
+  min-width: 58px;
+}
+.logo4 {
+  width: 110px;
+  min-width: 110px;
+}
+.logo5 {
+  width: 80px;
+  min-width: 80px;
+}
+.logo6 {
+  width: 120px;
+  min-width: 120px;
+}
+.logo7 {
+  width: 100px;
+  min-width: 100px;
+}
+.logo8 {
+  width: 80px;
+  min-width: 80px;
+}
+.logo9 {
+  width: 90px;
+  min-width: 90px;
+}
+.logo10 {
+  width: 90px;
+  min-width: 90px;
+}
+.slider {
+  /* display: none; */
+}
+.slider * {
+  transition: 0.3s;
+}
+.slider {
+  display: block;
+  background: transparent;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slideTrack {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: 1510px;
+  align-items: center;
+}
+.slide {
+  width: fit-content;
+  padding-right: 3rem;
+}
+.slide svg,
+.slide img {
+  margin: auto;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1510px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .zigzag {
+    display: none;
+  }
+  .logoWrap img,
+  .logoWrap svg {
+    margin-right: 2rem;
+  }
+  .logoWrap {
+    display: none;
+  }
+  .logo6 {
+    width: 120px;
+    min-width: 120px;
+  }
+  .logo7,
+  .logo4 {
+    width: 100px;
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+  }
+}

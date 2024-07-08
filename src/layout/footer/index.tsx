@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                 <Link className={styles.item} to={Routes.home}>
                   Home
                 </Link>
-                <Link className={styles.item} to={`${Routes.home}#services`}>
+                <Link className={styles.item} to={`${Routes.home}#products`}>
                   Product & Services
                 </Link>
                 <Link className={styles.item} to={Routes.about}>
@@ -50,14 +50,26 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
             <div>
               <p className={styles.ttl}>Our Products & Services</p>
               <ul>
-                <a className={styles.item}>Zitra Fund Managers</a>
-                <a className={styles.item}>Zitra Investments</a>
+                <a
+                  target="_blank"
+                  href={"https://www.zitrafundmanagers.com/"}
+                  className={styles.item}
+                >
+                  Zitra Fund Managers
+                </a>
+                <a
+                  target="_blank"
+                  href={"https://zitrainvestments.com/"}
+                  className={styles.item}
+                >
+                  Zitra Investments
+                </a>
               </ul>
             </div>
             <div>
               <p className={styles.ttl}>Contact</p>
               <ul>
-                <li className={styles.item}>017002801</li>
+                <li className={styles.item}>0202017002801</li>
                 <li className={styles.item}>
                   <a href="mailto:info@zitrabank.com">info@zitrabank.com</a>
                 </li>
