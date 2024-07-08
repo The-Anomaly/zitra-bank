@@ -7,7 +7,7 @@ import {
   LoanIcon,
 } from "assets";
 import styles from "./styles.module.scss";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 
 const Products = () => {
   const products: ProductType[] = [
@@ -119,6 +119,31 @@ const Products = () => {
       #fff`,
     },
   ];
+
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      const scrollAmount = Math.min(
+        carouselRef.current.scrollLeft,
+        carouselRef.current.clientWidth
+      );
+      carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      const maxScrollLeft =
+        carouselRef.current.scrollWidth - carouselRef.current.clientWidth;
+      const scrollAmount = Math.min(
+        maxScrollLeft - carouselRef.current.scrollLeft,
+        carouselRef.current.clientWidth
+      );
+      carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <section id="products" className={styles.bg}>
@@ -127,13 +152,13 @@ const Products = () => {
             Products that meet all your life goals
           </h2>
           <div className={styles.heading__btns}>
-            <LeftArrowCircle />
-            <LeftArrowCircle />
+            <LeftArrowCircle role="button" onClick={scrollLeft} />
+            <LeftArrowCircle role="button" onClick={scrollRight} />
           </div>
         </div>
-        <div className={styles.products}>
+        <div ref={carouselRef} className={styles.products}>
           {products.map((product) => (
-            <Product {...product} />
+            <Product {...product} key={product.title} />
           ))}
         </div>
       </section>

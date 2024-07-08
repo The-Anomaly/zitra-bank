@@ -34,6 +34,7 @@
   margin-left: calc((100vw - 1200px) / 2);
   padding-left: 2rem;
   overflow: auto;
+  scroll-snap-type: x mandatory;
 }
 .product {
   border-radius: 15px;
@@ -41,6 +42,7 @@
   padding: 2rem;
   width: 400px;
   min-width: 400px;
+  scroll-snap-align: center;
 
   &__stackWrap {
     border-radius: 12px;
