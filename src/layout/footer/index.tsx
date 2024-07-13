@@ -69,12 +69,16 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
             <div>
               <p className={styles.ttl}>Contact</p>
               <ul>
-                <li className={styles.item}>0202017002801</li>
+                <li className={styles.item}>02017002801</li>
                 <li className={styles.item}>
                   <a href="mailto:info@zitrabank.com">info@zitrabank.com</a>
                 </li>
                 <li className={`${styles.item} ${styles.address}`}>
-                  Address D59, Landbridge Avenue Oniru, Victoria Island, Lagos.
+                  Plot 267 Asebe street, Mabushi District, Casdastral Zone
+                  BO6, Abuja
+                </li>
+                <li className={`${styles.item} ${styles.address}`}>
+                  29 Aka Etinan Road, Uyo
                 </li>
               </ul>
             </div>
@@ -93,8 +97,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                 />
               </div>
               <p className={styles.subscribe__txt}>
-                Subscribe to our news letter to get up to date information on
-                new products and mouth watery rates on your investments.
+                Please enter your email to subscribe to our newsletter.
               </p>
             </div>
           </div>

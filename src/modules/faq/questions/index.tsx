@@ -80,11 +80,11 @@ const Questions = () => {
     },
     {
       question: "How secure is my money?.",
-      answer: ``,
+      answer: `The Zitra Bank App uses encryption, secure login protocols to ensure the safety of your information and transactions.`,
     },
     {
       question: "Are my card details safe?",
-      answer: `Yes, we work with ********* to secure your card details.`,
+      answer: `Yes, we work with Nigeria Inter-Bank Settlement System to secure your card details.`,
     },
     {
       question: "Why should I provide my BVN?",
@@ -124,7 +124,7 @@ const Questions = () => {
         <>
           You can start saving with as little as N1000
           <br />
-          You can autosave between*** - ****
+          You can autosave 1000 and above
         </>
       ),
     },
