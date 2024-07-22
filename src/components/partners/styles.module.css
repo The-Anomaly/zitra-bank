@@ -73,9 +73,9 @@
   position: relative;
 }
 .slideTrack {
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
   display: flex;
-  width: 1510px;
+  width: 2120px;
   align-items: center;
 }
 .slide {
@@ -91,7 +91,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1510px);
+    transform: translateX(-2120px);
   }
 }
 @media screen and (max-width: 800px) {

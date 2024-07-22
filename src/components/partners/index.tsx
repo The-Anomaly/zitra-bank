@@ -10,8 +10,12 @@ import {
   remitaLogo,
   krediLogo,
   ifitnessLogo,
+  filmhouseLogo,
+  dinkuLogo,
+  globusBankLogo,
+  interswitchLogo,
+  redSlateLogo,
 } from "assets";
-import * as React from "react";
 import styles from "./styles.module.css";
 
 const Partners = () => {
@@ -55,6 +59,23 @@ const Partners = () => {
             <img className={styles.logo8} src={ifitnessLogo} alt="" />
           </div>
           <div className={styles.slide}>
+            <img className={styles.logo8} src={filmhouseLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo3} src={dinkuLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo2} src={globusBankLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo2} src={interswitchLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo2} src={redSlateLogo} alt="" />
+          </div>
+
+          {/* Second */}
+          <div className={styles.slide}>
             <PagaLogo className={styles.logo1} />
           </div>
           <div className={styles.slide}>
@@ -86,6 +107,21 @@ const Partners = () => {
           </div>
           <div className={styles.slide}>
             <img className={styles.logo8} src={ifitnessLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={filmhouseLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo3} src={dinkuLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={globusBankLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={interswitchLogo} alt="" />
+          </div>
+          <div className={styles.slide}>
+            <img className={styles.logo8} src={redSlateLogo} alt="" />
           </div>
         </div>
       </div>

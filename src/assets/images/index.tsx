@@ -13,8 +13,18 @@ import providusLogo from "./providusLogo.png";
 import remitaLogo from "./remitaLogo.png";
 import youverifyLogo from "./youverifyLogo.png";
 import aboutHeroImg from "./aboutHeroImg.png";
+import dinkuLogo from "./dinkuLogo.png";
+import filmhouseLogo from "./filmhouseLogo.png";
+import globusBankLogo from "./globusBankLogo.png";
+import interswitchLogo from "./interswitchLogo.png";
+import redSlateLogo from "./redSlateLogo.png";
 
 export {
+  filmhouseLogo,
+  dinkuLogo,
+  globusBankLogo,
+  interswitchLogo,
+  redSlateLogo,
   aboutHeroImg,
   appzoneLogo,
   bidellusLogo,
@@ -31,4 +41,4 @@ export {
   debitCard,
   getStartedImg,
 };
-export * from "./team"
+export * from "./team";
