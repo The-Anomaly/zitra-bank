@@ -1,5 +1,5 @@
 import { Layout } from "layout";
-import { About, FAQ, Home, PrivacyPolicy } from "pages";
+import { About, FAQ, Home, LoanCalculator, PrivacyPolicy } from "pages";
 import { PathRouteProps } from "react-router-dom";
 import { Routes } from "./routes";
 
@@ -52,6 +52,14 @@ export const RouteBuilder: RouteBuilderItem[] = [
     path: Routes.privacy_policy,
     Layout: Layout,
     Element: PrivacyPolicy,
+  },
+  {
+    path: Routes.loan_calculator,
+    Layout: Layout,
+    Element: LoanCalculator,
+    props: {
+      active: "loan_calculator",
+    },
   },
   {
     path: "*",

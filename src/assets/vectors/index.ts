@@ -18,8 +18,12 @@ import { ReactComponent as VaultIcon } from "./vaultIcon.svg";
 import { ReactComponent as FlexIcon } from "./flexIcon.svg";
 import { ReactComponent as SaveIcon } from "./saveIcon.svg";
 import { ReactComponent as LoanIcon } from "./loanIcon.svg";
+import { ReactComponent as NairaIcon } from "./nairaIcon.svg";
+import { ReactComponent as PercentageIcon } from "./percentageIcon.svg";
 
 export {
+  NairaIcon,
+  PercentageIcon,
   VaultIcon,
   FlexIcon,
   SaveIcon,

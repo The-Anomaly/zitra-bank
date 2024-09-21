@@ -13,5 +13,6 @@ export const Routes = {
   about: "/about",
   faqs: "/faqs",
   contact: "/contact",
-  privacy_policy: "/privacy-policy"
+  privacy_policy: "/privacy-policy",
+  loan_calculator: "/loan-calculator",
 };

@@ -4,7 +4,7 @@ import { Routes } from "router/routes";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-type tabs = "home" | "about" | "faqs" | "contact";
+type tabs = "home" | "about" | "faqs" | "contact" | "loan_calculator";
 
 export interface NavbarProps {
   active: tabs;
@@ -44,6 +44,11 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
       text: "About us",
       state: "about",
       link: Routes.about,
+    },
+    {
+      text: "Loan Calculator",
+      state: "loan_calculator",
+      link: Routes.loan_calculator,
     },
     {
       text: "FAQ's",
