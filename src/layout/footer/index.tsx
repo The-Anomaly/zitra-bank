@@ -74,11 +74,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                   <a href="mailto:info@zitrabank.com">info@zitrabank.com</a>
                 </li>
                 <li className={`${styles.item} ${styles.address}`}>
-                  Plot 267 Asebe street, Mabushi District, Casdastral Zone
-                  BO6, Abuja
-                </li>
-                <li className={`${styles.item} ${styles.address}`}>
-                  29 Aka Etinan Road, Uyo
+                  Address: 129 Aka Etinan Road, Uyo.
                 </li>
               </ul>
             </div>

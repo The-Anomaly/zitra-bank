@@ -9,6 +9,9 @@ import team8 from "./team8.png";
 import team9 from "./team9.png";
 import team10 from "./team10.png";
 import team11 from "./team11.png";
+import team12 from "./team12.png";
+import team13 from "./team13.png";
+import team14 from "./team14.png";
 
 export {
   team1,
@@ -22,4 +25,7 @@ export {
   team9,
   team10,
   team11,
+  team12,
+  team13,
+  team14,
 };
