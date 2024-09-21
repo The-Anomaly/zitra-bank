@@ -2,6 +2,9 @@ import { AppStore, GooglePlay, heroMockup } from "assets";
 import styles from "./styles.module.scss";
 
 const HeroSection = () => {
+  const iosURL = "https://apps.apple.com/ng/app/zitra-ease/id6478912712";
+  const googleURL =
+    "https://play.google.com/store/apps/details?id=com.zitrainvestments.app";
   return (
     <>
       <section className={styles.heroBg}>
@@ -15,10 +18,10 @@ const HeroSection = () => {
             is all you need.
           </p>
           <div className={styles.btns}>
-            <a>
+            <a href={googleURL} target="_blank" rel="noreferrer">
               <GooglePlay />
             </a>
-            <a>
+            <a href={iosURL} target="_blank" rel="noreferrer">
               <AppStore />
             </a>
           </div>

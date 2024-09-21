@@ -65,7 +65,7 @@ const LoanCalculatorForm = () => {
     if (!duration) errors.duration = "Required";
     if (!interest) errors.interest = "Required";
 
-    if (Object.keys(errors).length > 1) {
+    if (Object.keys(errors).length >= 1) {
       setErrors(errors);
     } else {
       setErrors(undefined);
@@ -102,13 +102,30 @@ const LoanCalculatorForm = () => {
 
   const onSubmit = () => {
     if (amount && duration && interest) {
-      const loanAmount = parseFloat(amount);
+      const loanAmount = parseFloat(amount.replaceAll(",", ""));
       const interestRate = interest.value;
       const loanDuration = parseInt(duration);
 
       const result = calculateLoan(loanAmount, interestRate, loanDuration);
       setResult(result);
     }
+  };
+
+  // Format the input value with commas
+  const formatNumberWithCommas = (inputValue: string) => {
+    // Remove any non-digit characters (except the decimal point)
+    const numericValue = inputValue.replace(/[^\d]/g, '');
+
+    // Format the numeric value with commas
+    return numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
+
+  // Handle input change
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value;
+    
+    // Update the input field with the formatted number
+    setAmount(formatNumberWithCommas(inputValue));
   };
 
   return (
@@ -118,9 +135,9 @@ const LoanCalculatorForm = () => {
           icon={<NairaIcon />}
           placeholder="Enter a loan amount"
           label="Loan Amount"
-          type="number"
+          type="text"
           value={amount}
-          onChange={(event) => setAmount(event.target.value)}
+          onChange={handleInputChange}
           error={errors?.amount}
         />
         <Input
@@ -155,7 +172,9 @@ const LoanCalculatorForm = () => {
             <p>Total principal paid</p>{" "}
             <p>
               <span style={{ fontFamily: "sans-serif" }}>₦</span>
-              {parseFloat(amount ?? "0").toLocaleString()}
+              {result.monthlyPayment && amount
+                ? parseFloat(amount.replaceAll(",", "")).toLocaleString()
+                : 0.0}
             </p>
           </div>
           <div>

@@ -2,6 +2,9 @@ import { AppStore, getStartedImg, GooglePlay } from "assets";
 import styles from "./styles.module.scss";
 
 const GetStarted = () => {
+  const iosURL = "https://apps.apple.com/ng/app/zitra-ease/id6478912712";
+  const googleURL =
+    "https://play.google.com/store/apps/details?id=com.zitrainvestments.app";
   return (
     <>
       <section className={`container ${styles.section}`}>
@@ -52,10 +55,10 @@ const GetStarted = () => {
           </div>
 
           <div className={styles.btns}>
-            <a>
+            <a href={googleURL} target="_blank" rel="noreferrer">
               <GooglePlay />
             </a>
-            <a>
+            <a href={iosURL} target="_blank" rel="noreferrer">
               <AppStore />
             </a>
           </div>

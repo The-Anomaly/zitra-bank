@@ -212,7 +212,7 @@ const Product = ({
         <div className={styles.product__content}>
           <p style={{ color: titleColor }}>{title}</p>
           <p style={{ color: textColor }}>{longText}</p>
-          <button>Learn More</button>
+          {/* <button>Learn More</button> */}
         </div>
       </div>
     </>

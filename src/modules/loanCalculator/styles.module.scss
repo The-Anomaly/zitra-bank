@@ -46,6 +46,8 @@
     font-size: 44px;
     text-align: center;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .loanBreakdown {

@@ -112,7 +112,7 @@ const Questions = () => {
     },
     {
       question: "What Savings products are available on the Zitra App",
-      answer: `There are 3 savings products i.e. Z-Flex allow for fexible with access to your funds at anytime, Z-Stash – a high yield target savings plan that allow you take on specific projects project and Z-Vault – A long term savings plan that allows you to lock in your saving for a predefined period of time`,
+      answer: `There are 3 savings products i.e. Z-Flex allow for flexible access to your funds at anytime, Z-Stash – a high yield target savings plan that allows you take on specific projects and Z-Vault – A long term savings plan that allows you to lock in your saving for a predefined period of time`
     },
     {
       question: "How do I start saving on Zitra Bank?",
@@ -120,17 +120,11 @@ const Questions = () => {
     },
     {
       question: "How much can I start with?",
-      answer: (
-        <>
-          You can start saving with as little as N1000
-          <br />
-          You can autosave 1000 and above
-        </>
-      ),
+      answer: `You can start saving with as little as N1000 and above`,
     },
     {
       question: "How do I make deposit to my Savings?",
-      answer: `To deposit into your preferred saving, fund your Wallet by bank transfer or with your linked card then go to your preferred savings and and create a plan, input the name of your goal and how much you would like to save, this amount will be deducted from your wallet and be credited to your Z-flex. You can also set autosave for both wallet and linked bank card`,
+      answer: `To deposit into your preferred saving, fund your Wallet by bank transfer or with your linked card then go to your preferred savings and create a plan, input the name of your goal and how much you would like to save, this amount will be deducted from your wallet and be credited to your Z-flex. You can also set autosave for both wallet and linked bank card`
     },
     {
       question:
@@ -193,7 +187,7 @@ const Questions = () => {
       question: "How do I withdraw my savings?",
       answer: (
         <>
-          You can withdraw from your saving as follows:
+          You can withdraw from your savings as follows:
           <ul>
             <li>Z-flex savings - a maximum of 3 times within a month,</li>
             <li>
@@ -211,7 +205,7 @@ const Questions = () => {
     },
     {
       question: "How do I create my virtual card?",
-      answer: `From settings, click Virtual Card, create card enter the name you want to appear on card(this must be the same as the name on your BVN and your Zitra account) then create your card Pin, send in your request. Kindly note your virtual card will be made available after 24 hours of making your request.`,
+      answer: `From settings, click Virtual Card, create card, enter the name you want to appear on card(this must be the same as the name on your BVN and your Zitra account) then create your card Pin, send in your request. Kindly note your virtual card will be made available after 24 hours of making your request.`,
     },
     {
       question: "What is my card pin?",
@@ -219,7 +213,7 @@ const Questions = () => {
     },
     {
       question: "Will I be charged for requesting a card?",
-      answer: `Yes, you will be charged a processing fee of ******`,
+      answer: `Yes, you will be charged a processing fee.`,
     },
     {
       question: "How do I block my Virtual Card?",
@@ -227,11 +221,11 @@ const Questions = () => {
     },
     {
       question: "For what duration is the virtual card valid?",
-      answer: `Your virtual card has a validity of ** years. You will be contacted to confirm if you will like to renew once the card expires`,
+      answer: `Your virtual card has a validity of 3 years. You will be contacted to confirm if you will like to renew once the card expires.`,
     },
     {
       question: "What types of payment can I make on my Zitra Bank App",
-      answer: `You can carry out the following Utility Bills: Electricity, water, gas, etc.,Cable TV and Internet Bills, Phone Bills, School fees payment, Insurance Services, Religious Body payments, Taxes and levies etc`,
+      answer: `You can carry out the following, Utility Bills: Electricity, water, gas, etc.,Cable TV and Internet Bills, Phone Bills, School fees payment, Insurance Services, Religious Body payments, Taxes and levies etc`,
     },
     {
       question: "How can I make payments on the Zitra App",
