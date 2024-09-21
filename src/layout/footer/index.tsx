@@ -101,7 +101,7 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
             <img src={logoWhite} alt="zitra logo" />
             <div className={styles.otherLinks}>
               <a>Terms</a>
-              <a>Privacy</a>
+              <Link to={Routes.privacy_policy} >Privacy</Link>
             </div>
             <div className={styles.socials}>
               <a

@@ -23,13 +23,12 @@ const Team = () => {
       image: team12,
       name: "Professor Akpan Hogan Ekpo",
       role: "Chairman Board of Directors",
-      linkedinURL: "",
     },
     {
       image: team13,
       name: "Kufre Ekpo Udeme",
       role: "Managing Director",
-      linkedinURL: "",
+      linkedinURL: "https://www.linkedin.com/in/kufre-ekpo-udeme-aa4ba624b/",
     },
     {
       image: team1,
@@ -53,7 +52,7 @@ const Team = () => {
       image: team14,
       name: "Olufemi Akinrotimi",
       role: "Independent Non-Executive Director",
-      linkedinURL: "",
+      linkedinURL: "https://www.linkedin.com/in/olufemi-akinrotimi-4122892b/",
     },
     // {
     //   image: team4,
@@ -127,7 +126,7 @@ interface MemberProps {
   image: string;
   name: string;
   role: string;
-  linkedinURL: string;
+  linkedinURL?: string;
 }
 const Member = ({ image, name, role, linkedinURL }: MemberProps) => {
   return (
@@ -135,9 +134,11 @@ const Member = ({ image, name, role, linkedinURL }: MemberProps) => {
       <img className={styles.member__img} src={image} />
       <p className={styles.member__name}>{name}</p>
       <p className={styles.member__role}>{role}</p>
-      <a className={styles.member__link} href={linkedinURL} target="_blank">
-        <LinkedinIcon2 />
-      </a>
+      {linkedinURL ? (
+        <a className={styles.member__link} href={linkedinURL} target="_blank">
+          <LinkedinIcon2 />
+        </a>
+      ) : null}
     </div>
   );
 };
