@@ -55,11 +55,11 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
       state: "faqs",
       link: Routes.faqs,
     },
-    {
-      text: "Contact us",
-      state: "contact",
-      link: Routes.contact,
-    },
+    // {
+    //   text: "Contact us",
+    //   state: "contact",
+    //   link: Routes.contact,
+    // },
   ];
 
   return (

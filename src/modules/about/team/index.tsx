@@ -39,13 +39,13 @@ const Team = () => {
     {
       image: team2,
       name: "Femi Okuyelu",
-      role: "Director, Business Development",
+      role: "Non Executive Director",
       linkedinURL: "https://www.linkedin.com/in/femi-okuyelu-24576046/",
     },
     {
       image: team3,
       name: "Olaotan Olumuyiwa",
-      role: "Chief Information Officer",
+      role: "Non Executive Director",
       linkedinURL: "https://www.linkedin.com/in/olaotan-olamuyiwa-30ba59112/",
     },
     {

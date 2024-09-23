@@ -39,9 +39,9 @@ const Footer: React.FC<FooterProps> = ({ submit, clear }) => {
                 <Link className={styles.item} to={Routes.about}>
                   About us
                 </Link>
-                <Link className={styles.item} to={Routes.contact}>
+                {/* <Link className={styles.item} to={Routes.contact}>
                   Contact us
-                </Link>
+                </Link> */}
                 <Link className={styles.item} to={Routes.faqs}>
                   FAQs
                 </Link>
